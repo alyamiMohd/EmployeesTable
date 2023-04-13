@@ -3,7 +3,11 @@ I used for this program:
 - Javascript
 - Ejs
 - Node.js
-- Express
+- Expres
 - Mongoose
+<br>
 Dependencies used:
-- Flash,Ejs-mate ,Express-session, Method-override
+- Flash
+- Ejs-mate 
+- Express-session
+- Method-override
