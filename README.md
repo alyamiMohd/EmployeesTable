@@ -5,7 +5,9 @@ I used for this program:
 - Node.js
 - Expres
 - Mongoose
+<br>
 Dependencies used:
+<br>
 - Flash
 - Ejs-mate 
 - Express-session
