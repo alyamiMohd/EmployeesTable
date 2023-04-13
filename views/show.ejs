@@ -1,0 +1,17 @@
+<%- layout('./layout/boilerplate.ejs')%>
+
+<section class="container">
+<div class="card" style="width: 18rem; margin-left:450px;">
+    <div class="card-body">
+      <h5 class="card-title"><%= foundEmp.Name  %></h5>
+      <h6 class="card-subtitle mb-2 text-muted">ID: <%= foundEmp.Id %></h6>
+      <p class="card-text">Email: <%= foundEmp.Email %> </p>
+      <a href="/employees/<%=foundEmp.Id%>/edit" class="card-link btn btn-primary">Edit</a>
+
+      <form action="/employees/<%=foundEmp.Id%>?_method=DELETE" method='post' style="display:inline; margin-left:10px;">
+        <button class="card-link btn btn-danger">Delete</button>
+      </form>
+
+    </div>
+  </div>
+</section>

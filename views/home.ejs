@@ -1,0 +1,32 @@
+<%- layout('./layout/boilerplate.ejs')%>
+
+<h1 class="h1" style="margin-left:450px; margin-bottom:50px;">Employees</h1>
+
+<style>
+  table, th, td {
+  border: 1px solid rgb(71, 71, 71);
+  color:#fff;
+}
+</style>
+
+<table class="table table-striped" border-radius=20>
+    <thead>
+      <tr>
+        <th scope="col">EmpId</th>
+        <th scope="col">EmpName</th>
+        <th scope="col">EmpNo</th>
+        <th scope="col">EmpEmail</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let e of employees){%>
+       <tr>
+        <th scope="row"> <a href="/employees/<%=e.Id%>"> <%= e.Id %> </a></th>
+        <td><%= e.Name %></td>
+        <td><%= e.No %></td>
+        <td><%= e.Email %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <small class="text-muted">Click on Employee's Id to View/Edit/Delete.</small>

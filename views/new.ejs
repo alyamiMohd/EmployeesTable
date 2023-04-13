@@ -1,0 +1,48 @@
+<%- layout('./layout/boilerplate.ejs')%>
+
+<h1 class="mb-3">Register a new Employee:</h1>
+
+<form method="post" action="/employees" class='needs-validation' novalidate>
+    <div class="form-group mb-3">
+        <label for="empID" class="form-label">Employee ID</label>
+        <input type="number" class="form-control" name='Id'id="empID" placeholder="Id..." required>
+        <div class="valid-feedback">
+          <small>Looks good.</small>
+        </div>
+        <div class="invalid-feedback">
+          <small>Why are you dumb man?</small>
+        </div>
+      </div>
+
+    <div class="form-group mb-3">
+      <label for="empName"  class="form-label">Employee Name</label>
+      <input type="text" class="form-control" name='Name'id="empName" placeholder="Employee Name...." required>
+      <div class="valid-feedback">
+        <small>Looks good.</small>
+      </div>        <div class="invalid-feedback">
+        <small>Why are you dumb man?</small>
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="empNo" class="form-label">Employer Phone Number</label>
+        <input type="Number" class="form-control" name='No'id="empNo" placeholder="Number..." required>
+        <div class="valid-feedback">
+          <small>Looks good.</small>
+        </div>        <div class="invalid-feedback">
+          <small>Why are you dumb man?</small>
+        </div>
+      </div>
+
+    <div class="form-group mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" name='Email'id="email" placeholder="email..." required>
+        <div class="valid-feedback">
+          <small>Looks good.</small>
+        </div>        <div class="invalid-feedback">
+          <small>Why are you dumb man?</small>
+        </div>
+      </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
